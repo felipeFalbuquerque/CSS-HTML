@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores em CSS</title>
+    <style>
+        div{
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+        }
+        p{
+            color: darkblue;
+        }
+
+        .principal:hover{
+            background-color: lightgray;
+        }
+
+        .meio::before{
+            content: '(Fake news)';
+            color: red;
+            text-align: center;
+            background-color: black;
+        }
+
+        .principal > #ESCONDIDO {
+            display: none;
+        }
+
+        .principal:hover > #ESCONDIDO{
+            color: darkblue;
+            display: block;
+        }
+        h1{
+            background-color: aqua;
+            color: orange;
+            width: 300px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Teste com seletores em CSS</h1>
+    <div class="principal">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse architecto alias eos dicta. Architecto, porro odit. Iure illum quis dolore, quae voluptatem ipsam. Beatae cumque maxime adipisci dignissimos id sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi natus, cumque rem dolorem pariatur. Tenetur esse placeat adipisci eveniet beatae omnis error ut natus reprehenderit consequatur, totam id reiciendis. lore</p>
+        <p id="ESCONDIDO"> Esse texto esta escondido</p>
+    </div>
+
+    <div class="meio">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A deleniti dicta dolorum, in est exercitationem nulla non veniam illo laborum tempora repellendus quaerat excepturi iste et aspernatur, atque cumque velit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis illum dolor consequuntur officiis reprehenderit obcaecati quos, dolores iste. Eum laboriosam officiis necessitatibus ipsa ullam id impedit iure quasi ratione ipsam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ducimus repellat animi illo dolores fugiat distinctio unde nemo? Molestiae veritatis ipsum nobis consequatur corporis a dignissimos, iure fuga esse enim.</p>
+    </div>
+</body>
+</html>

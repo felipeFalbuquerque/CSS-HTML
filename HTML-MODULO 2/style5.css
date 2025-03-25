@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+main{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(#F2C12E, #F2AE30);
+}
+
+h2#mestre{color: #024959;}
