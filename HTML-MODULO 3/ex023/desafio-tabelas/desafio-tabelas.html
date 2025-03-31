@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas</title>
+    <style>
+        .tabela1 td{
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            
+        }
+        .tabela1 table{
+            border-collapse: collapse;
+        }
+        .tabela1 tr{
+            height: 100%;
+        }
+        .tabela1 tr > td:nth-child(even){
+            background-color: grey;
+        }
+        td{
+          border: 1px solid black; 
+          width: 200px;
+          text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Criando tabelas</h1>
+    <p>Desafio parte 1</p>
+    <table>
+        <tr class="tabela1">
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr class="tabela1">
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <tr class="tabela1">
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+        </tr>
+        <tr class="tabela1">
+            
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr class="tabela1">
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+
+        </tr>
+    </table>
+    <h1>Tabela 2</h1>
+    <p>Segunda tabela</p>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            
+                <td rowspan="5">B</td>
+           
+            <tr>
+                <td rowspan="5">C</td>
+            </tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+  
+        </tr>
+        <tr>
+            
+            <td>J</td>    
+            <td>L</td>
+            <td>M</td>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>    
+        </tr>
+
+    </table>
+    <h1>Recriando o teclado numerico do teclado</h1>
+    <table>
+        <tr>
+            <td>Num Lock</td>
+            <td>/</td>
+            <td>*</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">enter</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>.</td>
+        </tr>
+    </table>
+</body>
+
+</html>
