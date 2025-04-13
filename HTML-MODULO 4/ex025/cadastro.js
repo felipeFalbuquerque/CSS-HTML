@@ -1,0 +1,1 @@
+console.log("Seus dados foram enviados e recebidos por nos, aprenda JS para saber o que fazer com eles")
