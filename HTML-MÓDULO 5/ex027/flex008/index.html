@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box 7</title>
+    <title>Flexible Box 8</title>
     <style>
         .container{
             background-color: lightsalmon;
             display: flex;
             flex-flow: row wrap;
+            height: 400px;
+            align-items: start;
         }
         .item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 20px;
+            
         }
-        #i2{
-            order: -2;
+        #i1 {
+            align-self: auto;
+        }
+        #i2 {
+            align-self: flex-end;
+        }
+        #i3 {
+            align-self: center;
+        }
+        #i4 {
+            align-self: stretch;
+        }
+        #i5 {
+
+        }
+        #i6 {
+
+        }
+        #i7 {
+
         }
     </style>
 </head>
