@@ -6,111 +6,80 @@
     <title>Menu com Flex-Box</title>
     <style>
         *{
+            font-family: Arial, Helvetica, sans-serif;
             padding:0px ;
             margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
         }
         body{
             background-color: grey;
         }
-        main{
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 10px;
-        }
-        @media screen and (min-width:320px ) {
-            
-        
         header{
-            background-color: rgb(94, 94, 94);
-            border-radius: 10px;
+            background-color: rgb(71, 71, 71);
             padding: 10px;
             margin: 10px;
+            border-radius: 10px;
             color: white;
-            display: flex;
-            flex-flow: row wrap;
-            width: 90vw;
-
-
         }
-        header a {
+        menu a {
             color: white;
             text-decoration: none;
-            background-color: rgb(183, 174, 174);
+            background-color: rgb(138, 137, 137);
             padding: 5px;
             border-radius: 10px;
-            margin: 3px;
+            margin: 5px;
         }
-        header h1{
+        main{
+            background-color: white;
+            margin: 10px;
             padding: 10px;
+            border-radius: 10px;
         }
-        nav{
-            flex-flow: row nowrap;
-            display: flex;
-            flex: auto;
-            justify-content: flex-end;
-            align-items: center;
-        }
+        @media screen and (min-width:320px){
+            
+        
         #menu{
             display: flex;
-            justify-content: flex-start;
-            flex: 0 0 200px;
-            
-        }   }
-
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+        #h1{
+            display: flex;
+            align-items: center;
+        }  }
         @media screen and (max-width:492px) {
-            header{
-                display: flex;
-                flex-flow: column nowrap;
-                background-color: rgb(106, 106, 106);
-                flex: auto;
-            }
-            nav{
+            #menu{
                 display: flex;
                 flex-flow: column nowrap;
             }
-            #item{
-                flex-flow: column nowrap;
-                flex: 1 0 200px;
-                display: flex;
-                align-self: stretch;
-
+            #h1{
+                justify-content: center;
             }
             a{
                 text-align: center;
             }
-            #menu{
-                justify-content: center;
-                flex-flow: column nowrap;
-            }
         }
-
     </style>
 </head>
 <body>
-    <header> 
-        <div id="menu">
-            <div id="h1">
-                <h1 id="h1">Menu</h1>
-            </div>
-        </div>
+    <header>
         <nav>
-            <div id="item">
-                <a href="#" id="o1">Opção 1</a>
-                <a href="#" id="o2">Opção 2</a>
-                <a href="#" id="o3">Opção 3</a>
-                <a href="#" id="o4">Opção 4</a>
-                <a href="#" id="o5">Opção 5</a>
-                <a href="#" id="o6">Opção 6</a>
-            </div>
+            <div id="h1"><h1>Menu</h1></div>
         </nav>
+        <menu>
+            <div id="menu">
+                <a href="#">Opção 1</a>
+                <a href="#">Opção 2</a>
+                <a href="#">Opção 3</a>
+                <a href="#">Opção 4</a>
+                <a href="#">Opção 5</a>
+                <a href="#">Opção 6</a>
+            </div>
+        </menu>
     </header>
     <main>
-        <section>
-            <h1>Site com Flex-Box</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illo praesentium assumenda. Dolorem laborum inventore laboriosam sit, nostrum facere consequuntur hic fugiat dolore quisquam deleniti atque harum adipisci ad dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti culpa alias blanditiis sunt optio aspernatur provident fugit. Blanditiis beatae dolore, doloribus doloremque dicta hic corporis temporibus modi quam voluptas perspiciatis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cumque voluptatem minima consectetur eius nobis provident vitae officiis quam, harum quia vel dolorum deleniti officia placeat tenetur exercitationem maiores aliquid?</p>
-        </section>
+        <h1>Meu site</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aperiam perferendis, fuga quaerat hic nesciunt sed tempore, possimus soluta laudantium, repudiandae vel. Asperiores esse fugiat et vitae, ducimus in illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis aliquid cum! Ea voluptas officia suscipit, debitis, sequi laudantium magnam consequatur possimus dolorum laborum repellat impedit rerum maxime? Ratione, consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, in sunt at reprehenderit ut tempora fugiat aliquam aperiam similique animi quidem distinctio eligendi, ipsa perferendis sint quos voluptates iusto nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto voluptatibus est vero excepturi neque labore dignissimos assumenda sequi omnis, asperiores libero non atque voluptas deserunt laudantium voluptate natus. Non.
+        </p>
     </main>
 </body>
 </html>
