@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Flexível</title>
+    <style>
+        *{
+            padding:0px ;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #principal{
+            background-color: rgba(187, 108, 5, 0.804);
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            display: flex;
+            flex-flow: row wrap;
+            
+
+            
+        }
+        #item1{
+            width: 180px;
+        }
+        #item3{
+            width: 280px;
+        }
+        .item1e3{
+            display: flex;
+            justify-content: flex-start;
+        }
+        #item3{
+            width: 280px;
+        }
+        #item4{
+        
+        }
+        main{
+            padding: 10px;
+        }
+        main > h2,p{
+            width: 280px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de conteúdo Flexível</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus laborum quae aut amet blanditiis voluptate ratione suscipit magni libero eaque beatae iste veniam aspernatur, asperiores nulla nisi voluptates, eos odit!</p>
+        <div id="principal">
+            <div class="item1e3">
+                <h2>Elemento Media → Text:</h2>
+                <p>Esse processo envolve transformar conteúdos de mídia, como imagens, áudios ou vídeos, em texto. Exemplos incluem legendas geradas automaticamente a partir de um vídeo (transcrição), descrição de imagens para acessibilidade (descrições alternativas), ou a análise de sentimentos em um áudio. Essa conversão facilita o arquivamento, a busca e a compreensão de mídias em contextos digitais.
+                </p>
+            </div>
+            <div id="item2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2lYukLGpb_rdF1EkQ3Itc3KPEECUIgnyvw&s
+                " alt="imagens">
+            </div>
+            <div class="item1e3">
+                <h2>Elemento Text → Media:</h2>
+                <p>Nesse caso, o texto serve como base para gerar mídias. Exemplos comuns são a criação de imagens a partir de descrições textuais (como com IA generativa), a conversão de textos em fala (TTS – text-to-speech), ou a produção de vídeos a partir de roteiros. Esse processo amplia a acessibilidade e o alcance de conteúdos, tornando-os mais interativos e multimodais.
+                </p>
+            </div>
+        <div id="item4"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=ZdqTDcnsShv2kOMr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+        </div>
+        <h2>Conteúdo normal</h2>
+    <p>Conteúdo normal é aquele apresentado em sua forma original, como textos, imagens ou vídeos, sem ser transformado entre diferentes formatos de mídia.</p>
+    </main>
+    
+</body>
+</html>
