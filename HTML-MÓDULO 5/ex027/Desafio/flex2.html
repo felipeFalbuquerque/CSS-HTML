@@ -3,74 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteúdo Flexível</title>
+    <title>Flex</title>
     <style>
         *{
             padding:0px ;
-            margin: 0px;
+            margin: 10px;
             font-family: Arial, Helvetica, sans-serif;
         }
-        #principal{
-            background-color: rgba(187, 108, 5, 0.804);
-            margin: 10px;
-            padding: 10px;
-            color: white;
-            display: flex;
-            flex-flow: row wrap;
+        main{
+            background-color: burlywood;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.518);
             
+        }
+        .conteudo{
+            width: 400px;
+        }
+
+        
+        section{
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: row wrap;
+            height: 100vh;width: 850px;
+            flex: 1 1 600px;
+            width: 1050px;
 
             
         }
         #item1{
-            width: 180px;
+            order: 1;
+        }
+        #item2{
+            order: 3;
         }
         #item3{
-            width: 280px;
-        }
-        .item1e3{
-            display: flex;
-            justify-content: flex-start;
-        }
-        #item3{
-            width: 280px;
+            order: 4;
         }
         #item4{
+            order: 2;
+            width: 200px;
+        } 
+        @media screen and (max-width:500px) {
         
+        section{
+            display: flex;
+            flex-flow: column wrap;
         }
-        main{
-            padding: 10px;
+        main, section{
+            height: 60000px;
         }
-        main > h2,p{
-            width: 280px;
+        #item1{
+            order: 2;
         }
+        #item2{
+            order: 3;
+        }
+        #item3{
+            order: 4;
+        }
+        #item4{
+            order: 1;
+            width: 200px;
+        }
+    }
 
     </style>
 </head>
 <body>
-    <main>
-        <h1>Exemplo de conteúdo Flexível</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus laborum quae aut amet blanditiis voluptate ratione suscipit magni libero eaque beatae iste veniam aspernatur, asperiores nulla nisi voluptates, eos odit!</p>
-        <div id="principal">
-            <div class="item1e3">
-                <h2>Elemento Media → Text:</h2>
-                <p>Esse processo envolve transformar conteúdos de mídia, como imagens, áudios ou vídeos, em texto. Exemplos incluem legendas geradas automaticamente a partir de um vídeo (transcrição), descrição de imagens para acessibilidade (descrições alternativas), ou a análise de sentimentos em um áudio. Essa conversão facilita o arquivamento, a busca e a compreensão de mídias em contextos digitais.
-                </p>
-            </div>
-            <div id="item2">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2lYukLGpb_rdF1EkQ3Itc3KPEECUIgnyvw&s
-                " alt="imagens">
-            </div>
-            <div class="item1e3">
-                <h2>Elemento Text → Media:</h2>
-                <p>Nesse caso, o texto serve como base para gerar mídias. Exemplos comuns são a criação de imagens a partir de descrições textuais (como com IA generativa), a conversão de textos em fala (TTS – text-to-speech), ou a produção de vídeos a partir de roteiros. Esse processo amplia a acessibilidade e o alcance de conteúdos, tornando-os mais interativos e multimodais.
-                </p>
-            </div>
-        <div id="item4"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=ZdqTDcnsShv2kOMr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+    
+        <div> 
+            <h1>Site com conteúdo flexível</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id, soluta accusamus eos voluptas nesciunt esse tenetur tempore ad! Numquam unde rerum nostrum consectetur qui voluptatem amet, vitae ut rem!</p>
         </div>
-        <h2>Conteúdo normal</h2>
-    <p>Conteúdo normal é aquele apresentado em sua forma original, como textos, imagens ou vídeos, sem ser transformado entre diferentes formatos de mídia.</p>
+        <main>
+        <section>
+                <div id="item1">
+                    <div class="conteudo">
+                    <h2>Media → Text:</h2>
+                    <p>
+                    Esse processo envolve transformar conteúdos de mídia, como imagens, áudios ou vídeos, em texto. Exemplos incluem legendas geradas automaticamente a partir de um vídeo (transcrição), descrição de imagens para acessibilidade (descrições alternativas), ou a análise de sentimentos em um áudio. Essa conversão facilita o arquivamento, a busca e a compreensão de mídias em contextos digitais.
+                    </p>
+                </div>
+            </div>
+                <div id="item2">
+                    <div class="conteudo">
+                    <h2>Text → Media:</h2>
+                    <p>
+                    Nesse caso, o texto serve como base para gerar mídias. Exemplos comuns são a criação de imagens a partir de descrições textuais (como com IA generativa), a conversão de textos em fala (TTS – text-to-speech), ou a produção de vídeos a partir de roteiros. Esse processo amplia a acessibilidade e o alcance de conteúdos, tornando-os mais interativos e multimodais.
+                    </p>
+                </div>
+            </div>
+            <div id="item3"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=ZdqTDcnsShv2kOMr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div id="item4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfKnt2syJjrY0C_r1pwAM6vLulFQS8V-oBU-f6yY7b33aFgfhiiZFvdH2X8HUKscNTSM&usqp=CAU"
+                 alt="img">
+            </div>
+
+        </section>
     </main>
+        <p>Conteúdo normal é aquele apresentado em sua forma original, como textos, imagens ou vídeos, sem ser transformado entre diferentes formatos de mídia.</p>
     
 </body>
 </html>
