@@ -3,105 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex</title>
+    <title>Site Flexível 2</title>
     <style>
         *{
-            padding:0px ;
-            margin: 10px;
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            font-family: 'Courier New', Courier, monospace;
         }
+        img{
+            width: 400px;
+        }
+        @media screen {
         main{
-            background-color: burlywood;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.518);
-            
+            background-color: salmon;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
         }
-        .conteudo{
+        span{
+            font-size: 2em;
+        }
+        main p{
             width: 400px;
         }
 
-        
-        section{
-            display: flex;
-            justify-content: flex-start;
-            flex-flow: row wrap;
-            height: 100vh;width: 850px;
-            flex: 1 1 600px;
-            width: 1050px;
-
-            
-        }
-        #item1{
+        #i1{
             order: 1;
         }
-        #item2{
+        #i2{
             order: 3;
         }
-        #item3{
+        #i3{
             order: 4;
         }
-        #item4{
+        #i4{
             order: 2;
-            width: 200px;
-        } 
-        @media screen and (max-width:500px) {
-        
-        section{
-            display: flex;
-            flex-flow: column wrap;
+        } }
+        @media screen and (max-width:300px){
+            main{
+                background-color: salmon;
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            #i1{
+                order:2;
+            }
+            #i2{
+                order:3;
+            }
+            #i3{
+                order:4;
+                width: 98%;
+            }
+            #i4{
+                order:1;
+            }
         }
-        main, section{
-            height: 60000px;
-        }
-        #item1{
-            order: 2;
-        }
-        #item2{
-            order: 3;
-        }
-        #item3{
-            order: 4;
-        }
-        #item4{
-            order: 1;
-            width: 200px;
-        }
-    }
-
     </style>
 </head>
-<body>
-    
-        <div> 
-            <h1>Site com conteúdo flexível</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id, soluta accusamus eos voluptas nesciunt esse tenetur tempore ad! Numquam unde rerum nostrum consectetur qui voluptatem amet, vitae ut rem!</p>
-        </div>
-        <main>
-        <section>
-                <div id="item1">
-                    <div class="conteudo">
-                    <h2>Media → Text:</h2>
-                    <p>
-                    Esse processo envolve transformar conteúdos de mídia, como imagens, áudios ou vídeos, em texto. Exemplos incluem legendas geradas automaticamente a partir de um vídeo (transcrição), descrição de imagens para acessibilidade (descrições alternativas), ou a análise de sentimentos em um áudio. Essa conversão facilita o arquivamento, a busca e a compreensão de mídias em contextos digitais.
-                    </p>
-                </div>
-            </div>
-                <div id="item2">
-                    <div class="conteudo">
-                    <h2>Text → Media:</h2>
-                    <p>
-                    Nesse caso, o texto serve como base para gerar mídias. Exemplos comuns são a criação de imagens a partir de descrições textuais (como com IA generativa), a conversão de textos em fala (TTS – text-to-speech), ou a produção de vídeos a partir de roteiros. Esse processo amplia a acessibilidade e o alcance de conteúdos, tornando-os mais interativos e multimodais.
-                    </p>
-                </div>
-            </div>
-            <div id="item3"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=ZdqTDcnsShv2kOMr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div id="item4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfKnt2syJjrY0C_r1pwAM6vLulFQS8V-oBU-f6yY7b33aFgfhiiZFvdH2X8HUKscNTSM&usqp=CAU"
-                 alt="img">
-            </div>
+<body> <h1>Exemplo de conteúdo Flexível</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ut! Laudantium repellat repellendus saepe obcaecati modi delectus dolorem eum ducimus cumque! Repudiandae, vitae veritatis? Necessitatibus sunt ipsam laboriosam consectetur itaque.</p>
+    <main>
+        
+            
+            <p id="i1"><span>Conteúdo Text -> Media</span><br>Este conceito refere-se à transformação de conteúdo textual em formatos de mídia, como vídeos, áudios ou imagens. Por exemplo, um artigo pode ser adaptado para um vídeo explicativo, onde o texto é narrado e complementado com elementos visuais. Essa abordagem torna o conteúdo mais acessível e atraente para diferentes públicos, aproveitando a força das mídias visuais e auditivas.</p>
+        
 
-        </section>
+        
+            
+            <p id="i2"><span>Conteúdo Media -> Text</span><br>Aqui, o processo é inverso: o conteúdo em formato de mídia é convertido em texto. Isso é comum em transcrições de podcasts ou vídeos, onde o áudio é transformado em um documento escrito. Essa prática é útil para tornar o conteúdo mais pesquisável e acessível para aqueles que preferem ler em vez de ouvir ou assistir.</p>
+       
+        
+        <iframe id="i3" width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=GJ4agmlCZBsg1UG2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <img id="i4" src="https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="gráfico">
     </main>
-        <p>Conteúdo normal é aquele apresentado em sua forma original, como textos, imagens ou vídeos, sem ser transformado entre diferentes formatos de mídia.</p>
-    
+    <h2>Conteúdo Normal</h2>
+    <p>O termo "conteúdo normal" pode referir-se a qualquer tipo de material informativo ou de entretenimento que não esteja necessariamente associado a transformações entre texto e mídia. Pode incluir postagens de blog, artigos, notícias, e outros tipos de escrita que são consumidos diretamente em formato textual.</p>
 </body>
 </html>

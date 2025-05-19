@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu com Flex-Box</title>
+    <title>Site Flexivel</title>
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
-            padding:0px ;
-            margin: 0px;
-        }
-        body{
-            background-color: grey;
+            margin: 10px;
+            color: white;
         }
         header{
-            background-color: rgb(71, 71, 71);
+            background-color: rgb(70, 70, 70);
             padding: 10px;
-            margin: 10px;
-            border-radius: 10px;
-            color: white;
-        }
-        menu a {
-            color: white;
-            text-decoration: none;
-            background-color: rgb(138, 137, 137);
-            padding: 5px;
-            border-radius: 10px;
-            margin: 5px;
         }
         main{
-            background-color: white;
-            margin: 10px;
+            background-color: lightgrey;
             padding: 10px;
-            border-radius: 10px;
         }
-        @media screen and (min-width:492px){
+
+        @media screen {
             
         
-        #menu{
-            display: flex;
+        menu{
+            flex: auto;
             flex-flow: row nowrap;
+            display: flex;
+
             justify-content: flex-end;
         }
-        #h1{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex-basis: 200px;
-            
+        a{
+            text-decoration: none;
+            background-color: rgb(133, 133, 133);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 2px;
+        }
+        nav > h1{
+            font-size: 2.0em;
         }  }
-        @media screen and (max-width:492px) {
-            #menu{
+        @media screen and (max-width:500px) {
+            menu{
                 display: flex;
                 flex-flow: column nowrap;
             }
-            #h1{
-                justify-content: center;
-            }
             a{
+                text-align: center;
+                border-radius: 0px ;
+                border: 3px solid black;
+                margin: 0px;
+            }
+            nav h1{
                 text-align: center;
             }
         }
@@ -65,26 +58,19 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="h1"><h1>Menu</h1></div>
-        </nav>
-        <menu>
-            <div id="menu">
+        <nav>   <h1>Meu site</h1>
+            <menu>
                 <a href="#">Opção 1</a>
                 <a href="#">Opção 2</a>
                 <a href="#">Opção 3</a>
                 <a href="#">Opção 4</a>
                 <a href="#">Opção 5</a>
-                <a href="#">Opção 6</a>
-            </div>
-        </menu>
+            </menu>
+        </nav>
     </header>
     <main>
-        <h1>Meu site</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aperiam perferendis, fuga quaerat hic nesciunt sed tempore, possimus soluta laudantium, repudiandae vel. Asperiores esse fugiat et vitae, ducimus in illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis aliquid cum! Ea voluptas officia suscipit, debitis, sequi laudantium magnam consequatur possimus dolorum laborum repellat impedit rerum maxime? Ratione, consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, in sunt at reprehenderit ut tempora fugiat aliquam aperiam similique animi quidem distinctio eligendi, ipsa perferendis sint quos voluptates iusto nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto voluptatibus est vero excepturi neque labore dignissimos assumenda sequi omnis, asperiores libero non atque voluptas deserunt laudantium voluptate natus. Non.
-        </p>
-        <img src="" alt="">
+        <h2>Meu Site</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae odio sunt assumenda, mollitia veritatis iure aperiam vel quisquam id ipsum impedit cupiditate labore molestias adipisci? Ipsam voluptas quos in sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse maiores architecto magni cupiditate pariatur illo aperiam repellendus odio quidem sit vero magnam, numquam earum laborum quos? Excepturi nemo debitis delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum necessitatibus voluptates recusandae provident blanditiis, sint consequuntur ut dolor aspernatur iure dolores possimus corporis quisquam perferendis inventore hic atque commodi ipsam?</p>
     </main>
-    </form>
 </body>
 </html>
